@@ -1,13 +1,13 @@
-import { Philosopher, Poppins } from "next/font/google";
+import { Ubuntu, Roboto } from "next/font/google";
 import "@/styles/globals.css";
 
-const philosopher = Philosopher({
+const ubuntu = Ubuntu({
   subsets: ["latin"],
   weight: ["700", "400"],
 });
-const poppins = Poppins({
+const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["700", "400", "300"],
+  weight: ["700", "400", "300", "100"],
 });
 
 export default function App({ Component, pageProps }) {
@@ -16,8 +16,8 @@ export default function App({ Component, pageProps }) {
       <style jsx global>
         {`
           :root {
-            --philosopher-font: ${philosopher.style.fontFamily};
-            --poppins-font: ${poppins.style.fontFamily};
+            --Ubuntu-font: ${ubuntu.style.fontFamily};
+            --Roboto-font: ${roboto.style.fontFamily};
           }
         `}
       </style>{" "}

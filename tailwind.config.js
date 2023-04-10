@@ -8,6 +8,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors: {
+      primary: "#363636",
+      gray: "#FCFCFC",
+      orange: "#E4471B",
+    },
     screens: {
       desktop: { max: "1024px" },
       // => @media (max-width: 1024px) { ... }
@@ -20,8 +25,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        primary: ["var(--poppins-font)", ...fontFamily.sans],
-        serif: ["var(--philosopher-font)", ...fontFamily.serif],
+        primary: ["var(--Roboto-font)", ...fontFamily.sans],
+        special: ["var(--Ubuntu-font)", ...fontFamily.serif],
       },
     },
   },
