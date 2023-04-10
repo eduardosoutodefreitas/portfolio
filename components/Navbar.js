@@ -1,10 +1,16 @@
-import { RiMoonClearLine } from "react-icons/ri";
+import { RiMoonClearFill } from "react-icons/ri";
 function Navbar() {
   return (
     <>
-      <header className="flex items-center justify-between py-5 px-10">
+      <header className="flex items-center justify-between py-5 px-10 text-primary ">
+        <span className="font-special text-3xl font-bold">
+          Edu.<span className="text-orange">dev</span>
+        </span>
         <nav className="flex-1">
-          <ul className="text-xl flex justify-center align-center gap-x-24">
+          <ul className="text-base flex justify-center align-center gap-x-24">
+            <li>
+              <a href="#">Home</a>{" "}
+            </li>
             <li>
               <a href="#">Sobre mim</a>{" "}
             </li>
@@ -16,7 +22,7 @@ function Navbar() {
             </li>
           </ul>
         </nav>
-        <RiMoonClearLine size={30} />
+        <RiMoonClearFill cursor={"pointer"} size={35} />
       </header>
     </>
   );
