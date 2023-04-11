@@ -1,27 +1,36 @@
 import Image from "next/image";
+import { BsArrowRight } from "react-icons/bs";
+import { VscFilePdf } from "react-icons/vsc";
+import { FiGithub } from "react-icons/fi";
+import { FaLinkedinIn } from "react-icons/fa";
+
 import HeroImage from "../../assets/img/heroImage.png";
-import { RiLinkedinFill } from "react-icons/ri";
-import { RiGithubLine } from "react-icons/ri";
-import { AiOutlineFileText } from "react-icons/ai";
-import ButtonIcon from "../Icon";
 
 function Hero() {
   return (
-    <div className="flex items-center justify-center relative h-[600px]">
-      <div className="h-56 flex flex-col justify-between items-center absolute top-10 left-5">
-        <ButtonIcon icon={<AiOutlineFileText size={30} color="white" />} />
-        <ButtonIcon icon={<RiLinkedinFill size={30} color="white" />} />
-        <ButtonIcon icon={<RiGithubLine size={30} color="white" />} />
-      </div>{" "}
-      <div className="text-center">
-        <Image
-          src={HeroImage}
-          width={300}
-          height={300}
-          className="shadow-lg rounded-full"
-        />
-        <h1 className="text-xl font-serif font-bold py-2">Eduardo Souto</h1>
-        <p className="font-sans font-light text-2xl">Desenvolvedor Front-end</p>
+    <div className="flex items-center justify-center gap-x-24 relative h-[550px] bg-white font-primary text-primary ">
+      <Image
+        src={HeroImage}
+        width={350}
+        height={350}
+        className=" rounded-br-[120px]"
+      />
+      <div className="flex flex-col gap-y-1">
+        <h1 className="text-4xl font-special font-bold ">
+          Desenvolvedor Front-end
+        </h1>
+        <p className="font-light text-lg">
+          Olá! Eu me chamo Eduardo Souto, seja bem-vindo <br /> ao meu
+          portfólio.
+        </p>
+        <a href="#" className="inline-block font-semibold mt-7">
+          Meus Projetos <BsArrowRight className="inline-block ml-2" />{" "}
+        </a>
+      </div>
+      <div className="flex gap-x-14 absolute left-10 bottom-1 bg-cyan-600">
+        <VscFilePdf size={28} cursor={"pointer"} color="#000" />
+        <FiGithub size={28} cursor={"pointer"} color="#000" />
+        <FaLinkedinIn size={28} cursor={"pointer"} color="#000" />
       </div>
     </div>
   );
