@@ -2,7 +2,7 @@ import { RiMoonClearFill } from "react-icons/ri";
 function Navbar() {
   return (
     <>
-      <header className="flex items-center justify-between py-5 px-10 text-primary ">
+      <header className="flex items-center justify-between py-5 px-10 text-primary sticky top-0 z-10 bg-clip-padding backdrop-filter backdrop-blur-sm  ">
         <span className="font-special text-3xl font-bold">
           Edu.<span className="text-orange">dev</span>
         </span>

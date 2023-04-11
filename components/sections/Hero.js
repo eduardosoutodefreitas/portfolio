@@ -8,7 +8,7 @@ import HeroImage from "../../assets/img/heroImage.png";
 
 function Hero() {
   return (
-    <div className="flex items-center justify-center gap-x-24 relative h-[550px] bg-white font-primary text-primary ">
+    <div className="flex items-center justify-center gap-x-24 relative h-[595px] bg-white font-primary text-primary ">
       <Image
         src={HeroImage}
         width={350}
@@ -27,7 +27,7 @@ function Hero() {
           Meus Projetos <BsArrowRight className="inline-block ml-2" />{" "}
         </a>
       </div>
-      <div className="flex gap-x-14 absolute left-10 bottom-1 bg-cyan-600">
+      <div className="flex gap-x-14 absolute left-10 bottom-3 ">
         <VscFilePdf size={28} cursor={"pointer"} color="#000" />
         <FiGithub size={28} cursor={"pointer"} color="#000" />
         <FaLinkedinIn size={28} cursor={"pointer"} color="#000" />
