@@ -3,11 +3,11 @@ import "@/styles/globals.css";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
-  weight: ["700", "400"],
+  weight: ["700", "500", "400", "300"],
 });
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["700", "400", "300", "100"],
+  weight: ["900", "700", "500", "400", "300", "100"],
 });
 
 export default function App({ Component, pageProps }) {

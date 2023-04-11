@@ -8,11 +8,6 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
-      primary: "#363636",
-      gray: "#FCFCFC",
-      orange: "#E4471B",
-    },
     screens: {
       desktop: { max: "1024px" },
       // => @media (max-width: 1024px) { ... }
@@ -27,6 +22,10 @@ module.exports = {
       fontFamily: {
         primary: ["var(--Roboto-font)", ...fontFamily.sans],
         special: ["var(--Ubuntu-font)", ...fontFamily.serif],
+      },
+      colors: {
+        primary: "#363636",
+        orange: "#E4471B",
       },
     },
   },
