@@ -8,7 +8,10 @@ import HeroImage from "../../assets/img/heroImage.png";
 
 function Hero() {
   return (
-    <div className="flex items-center justify-center gap-x-24 relative h-[595px] bg-white font-primary text-primary ">
+    <div
+      id="home"
+      className="flex items-center justify-center gap-x-24 relative h-[595px] bg-white font-primary text-primary "
+    >
       <Image
         src={HeroImage}
         width={350}

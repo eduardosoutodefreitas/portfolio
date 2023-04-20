@@ -4,7 +4,7 @@ import ProjectCard from "../ProjectCard";
 
 export default function Projects() {
   return (
-    <section className="px-40 py-20 text-primary font-primary">
+    <section id="projects" className="px-40 py-20 text-primary font-primary">
       <p className="font-semibold text-xl font-special">
         Feito com <span className="line-through">amor</span> um{" "}
         <span className="text-orange">teclado</span>

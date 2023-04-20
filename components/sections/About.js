@@ -21,7 +21,10 @@ const techStack = [
 ];
 export default function About() {
   return (
-    <section className="h-[700px] bg-gray-100 font-primary text-primary px-40 flex flex-col items-start justify-evenly relative">
+    <section
+      id="about"
+      className="h-[700px] bg-gray-100 font-primary text-primary px-40 flex flex-col items-start justify-evenly relative"
+    >
       <div>
         <p className="font-semibold text-xl">Saiba mais</p>
         <h2 className="font-bold text-4xl my-3 mb-6">
