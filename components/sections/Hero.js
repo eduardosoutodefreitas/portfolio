@@ -26,7 +26,7 @@ function Hero() {
           Olá! Eu me chamo Eduardo Souto, seja bem-vindo <br /> ao meu
           portfólio.
         </p>
-        <a href="#" className="inline-block font-semibold mt-7">
+        <a href="#projects" className="inline-block font-semibold mt-7">
           Meus Projetos <BsArrowRight className="inline-block ml-2" />{" "}
         </a>
       </div>

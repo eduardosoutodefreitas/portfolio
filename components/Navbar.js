@@ -6,23 +6,22 @@ function Navbar() {
         <span className="font-special text-3xl font-bold">
           Edu.<span className="text-orange">dev</span>
         </span>
-        <nav className="flex-1">
+        <nav>
           <ul className="text-base flex justify-center align-center gap-x-24">
             <li>
-              <a href="#">Home</a>{" "}
+              <a href="#home">Home</a>{" "}
             </li>
             <li>
-              <a href="#">Sobre mim</a>{" "}
+              <a href="#about">Sobre mim</a>{" "}
             </li>
             <li>
-              <a href="#">Projetos</a>{" "}
+              <a href="#projects">Projetos</a>{" "}
             </li>
             <li>
-              <a href="#">Contato</a>{" "}
+              <a href="#contact">Contato</a>{" "}
             </li>
           </ul>
         </nav>
-        <RiMoonClearFill cursor={"pointer"} size={35} />
       </header>
     </>
   );
