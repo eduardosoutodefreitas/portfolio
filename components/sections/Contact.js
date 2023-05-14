@@ -8,7 +8,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="py-24 font-primary text-primary px-40 flex justify-between"
+      className="py-24 font-primary text-primary px-40 flex items-center justify-center gap-20 tablet:px-20 tablet:flex-col"
     >
       <div>
         <p className="font-semibold text-xl font-special">
@@ -24,14 +24,14 @@ function Contact() {
           <FaLinkedinIn size={28} cursor={"pointer"} color="#363636" />
         </div>
       </div>
-      <form className="w-5/12 p-6 flex flex-col border rounded-sm shadow-lg">
+      <form className="w-5/12 p-6 flex flex-col border rounded-sm shadow-lg min-w-[300px] tablet:w-4/5 smartphone:p-3 smartphone:min-w-[170px]">
         <fieldset className="relative">
           <label for="name">Nome</label>
           <input
             id="name"
             type="text"
             placeholder="Insira seu nome"
-            className="placeholder:text-primary/70 outline-none w-full bg-gray-50 border  border-primary/70 rounded-md pl-9 py-1"
+            className="placeholder:text-primary/70 smartphone:placeholder:text-sm outline-none w-full bg-gray-50 border  border-primary/70 rounded-md pl-9 py-1"
           />
           <MdPerson className="absolute left-3 bottom-2" size={20} />
         </fieldset>
@@ -41,7 +41,7 @@ function Contact() {
             id="email"
             type="email"
             placeholder="Insira seu email"
-            className="placeholder:text-primary/70 outline-none w-full bg-gray-50 border  border-primary/70 rounded-md pl-9 py-1"
+            className="placeholder:text-primary/70 smartphone:placeholder:text-sm outline-none w-full bg-gray-50 border  border-primary/70 rounded-md pl-9 py-1"
           />
           <MdEmail className="absolute left-3 bottom-2" size={20} />
         </fieldset>
@@ -49,7 +49,7 @@ function Contact() {
           <label for="message">Mensagem</label>
           <textarea
             placeholder="Sua Mensagem"
-            className="placeholder:text-primary/70 resize-none outline-none w-full bg-gray-50 border border-primary/70 rounded-md pl-3 py-1 h-24"
+            className="placeholder:text-primary/70 smartphone:placeholder:text-sm resize-none outline-none w-full bg-gray-50 border border-primary/70 rounded-md pl-3 py-1 h-24"
             id="message"
             name="Message"
             cols="40"

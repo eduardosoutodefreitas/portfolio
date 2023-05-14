@@ -5,7 +5,7 @@ import { useState } from "react";
 function SideNav() {
   const [activeItem, setActiveItem] = useState("home");
   return (
-    <div className="flex flex-col gap-y-5 fixed right-9 bottom-10">
+    <div className="flex flex-col gap-y-5 fixed right-9 bottom-10 smartphone:hidden">
       <a
         href="#home"
         className={`h-4 w-4 rounded-full cursor-pointer ${
